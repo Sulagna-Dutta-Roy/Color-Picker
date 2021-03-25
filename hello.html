@@ -1,0 +1,10 @@
+function resetIn () {
+    arr = generateRandomColor(noOfSquares);
+    picked = arr[randomPickedColorIndex()];
+    targetColor.textContent = picked;
+    message.textContent = "";
+    head.style.backgroundColor = "steelblue";
+    
+    for (var i = 0; i < squares.length; i++)
+        squares[i].style.backgroundColor = arr[i];
+}
